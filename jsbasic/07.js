@@ -76,7 +76,7 @@ const obj2 = { 4: "four", 5: "five", 6: "six" };   // object with string keys
 
 //const obj3 = { obj1, obj2 };   // merging obj1 and obj2 using spread operator
 const obj3 = Object.assign({}, obj1, obj2); // {} is source and obj1 and obj2 are target objects, it will merge obj1 and obj2 into a new object and return it
-console.log(obj3);   // it will print the merged object of obj1 and obj2
+//console.log(obj3);   // it will print the merged object of obj1 and obj2
 
 const users = [
      {
@@ -104,13 +104,48 @@ const users = [
 
 users[0].name = "Arohi Sharma";   // updating the name of the first user in the users array
 
-console.log(users);   // it will print the updated users array with the new name of the first user  
+//console.log(users);   // it will print the updated users array with the new name of the first user  
 
-console.log(tinderUser);   // it will print the tinderUser object
-console.log(Object.keys(tinderUser));   // it will print the keys of the tinderUser object
+//console.log(tinderUser);   // it will print the tinderUser object
+//console.log(Object.keys(tinderUser));   // it will print the keys of the tinderUser object
 
-console.log(Object.values(tinderUser));   // it will print the values of the tinderUser object
+//console.log(Object.values(tinderUser));   // it will print the values of the tinderUser object
 
-console.log(Object.entries(tinderUser));   // it will print the key-value pairs of the tinderUser object in an array format
+//console.log(Object.entries(tinderUser));   // it will print the key-value pairs of the tinderUser object in an array format
 
-console.log(tinderUser.hasOwnProperty("name"));   // it will return true if the tinderUser object has the name property, otherwise it will return false
+//console.log(tinderUser.hasOwnProperty("name"));   // it will return true if the tinderUser object has the name property, otherwise it will return false
+
+
+const course = {
+     courseName: "Learning Javascript",
+     price: 999,
+     courseInstructor: "Sohan"
+}
+
+//course.courseInstructor();
+
+const {courseInstructor : instructor} = course;
+
+//console.log(courseInstructor);
+console.log(instructor);
+
+//*******Json format*******/
+
+/*
+{
+     "name": "Arohi",
+     "age": 25,
+     "courseName": "Learning Javascript",
+     "price": 999
+}   // this is a JSON object, it is a string representation of an object in JavaScript. It is used to store and exchange data between a server and a web application. JSON format is a lightweight data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is often used for transmitting data between a server and a web application as an alternative to XML. JSON stands for JavaScript Object Notation, and it is based on a subset of the JavaScript programming language.
+*/
+
+[
+     {
+
+     }
+
+]  // JSON format is a lightweight data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is often used for transmitting data between a server and a web application as an alternative to XML. JSON stands for JavaScript Object Notation, and it is based on a subset of the JavaScript programming language.
+
+
+
